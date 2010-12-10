@@ -1,4 +1,8 @@
 <?php
+/**
+ * Create glitched images
+ * @author Vincent Bruijn <vebruijn@gmail.com>
+ */
 class Satromizer {
 	private $chunks = 7;
 	
