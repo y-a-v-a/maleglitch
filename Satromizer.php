@@ -4,11 +4,11 @@
  * @author Vincent Bruijn <vebruijn@gmail.com>
  */
 class Satromizer {
-	private $chunks = 7;
+	private $chunks = 12;
 	
-	private $chunk_size_min = 32;
+	private $chunk_size_min = 8;
 	
-	private $chunk_size_max = 64;
+	private $chunk_size_max = 32;
 	
 	private $orig_img = null;
 	
@@ -18,7 +18,13 @@ class Satromizer {
 	
 	private $parts;
 	
+	private $debug = array();
+	
 	public function __construct($file = '') {
+		$this->time = time();
+		$this->debug['file'] = $file;
+		$this->debug['time'] = $this->time;
+		
 		$this->orig_img = @file_get_contents($file);
 		if ($this->orig_img == false) {
 			throw new Exception('Cannot get file contents.');
@@ -57,8 +63,12 @@ class Satromizer {
 		$tmp = implode('',$arr);
 
 		$this->def_img = @imagecreatefromstring($tmp);
+		$this->debug['success'] = 'true';
 		unset($tmp);
 		if ($this->def_img === false) {
+			header('Content-type: text/html');
+			$this->debug['success'] = 'false';
+			// var_dump($this->debug);
 			$this->def_img = @imagecreatetruecolor(300,300);
 		}
 		// header('Content-type: image/jpeg');
@@ -70,6 +80,7 @@ class Satromizer {
 		}
 		$this->def_img = ob_get_clean();
 		// exit;
+		$this->doDebug();
 		return $this;
 	}
 	
@@ -80,7 +91,7 @@ class Satromizer {
 	 */
 	public function export($target = '') {
 		if ($this->def_img != null) {
-			$saved = @file_put_contents($target . 'img' . time() .'.jpg', $this->def_img);
+			$saved = @file_put_contents($target . 'img' . $this->time .'.jpg', $this->def_img);
 			if ($saved == false) {
 				throw new Exception('Cannot write image. Permissions issue?');
 			}
@@ -125,14 +136,22 @@ class Satromizer {
 	private function getAdditions() {
 		// create some additional / repetitive image data
 		$additions = array();
+		$k = 1;
+		$this->debug['strlen'] = strlen($this->tmp_img);
 		for ($i = 1; $i < $this->chunks; $i++) {
 			$rs = array();
 			for($j = 0; $j < 2; $j++) {
 				$rs[] = rand($this->chunk_size_min, $this->chunk_size_max);
 			}
 			sort($rs);
-			$h = strlen($this->tmp_img) / rand(2,4);
-			$add = substr($this->tmp_img,$h - $rs[0], $h - $rs[1]);
+			$start = $this->parts[$k++] - ($rs[0] + $rs[1]);
+			$start = $start < 0 ? 0 : $start;
+			$end = $rs[0] + $rs[1];
+			$end = $start + $end > strlen($this->tmp_img) ? 0 : $end;
+			$add = substr($this->tmp_img, $start, $end);
+			$this->debug[$start] = $end;
+
+			$this->parts;
 			$additions[] = $add;
 		}
 		return $additions;
@@ -159,9 +178,20 @@ class Satromizer {
 		@file_put_contents('imgs/log.txt',$msg,FILE_APPEND);
 	}
 	
+	public function __toString() {
+		return "Cannot convert image to string";
+	}
+	
+	private function doDebug() {
+		ob_start();
+		print_r($this->debug);
+		$msg = ob_get_clean();
+		$this->log($msg);
+	}
+	
 	public function __destruct() {
-		imagedestroy($this->orig_img);
-		imagedestroy($this->tmp_img);
-		imagedestroy($this->def_img);
+		@imagedestroy($this->orig_img);
+		@imagedestroy($this->tmp_img);
+		@imagedestroy($this->def_img);
 	}
 }
