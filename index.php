@@ -1,39 +1,50 @@
 <?php header("Content-Type: text/html; charset=UTF-8"); ?>
 <!DOCTYPE html>
 
-<html lang="en">
-
-<head class="html5reset-bare-bones">
+<html version="HTML+RDFa 1.1" lang="en">
+<head>
 
 	<meta charset="utf-8">
+	<title>Kazimir Maleglitch :: ax710 :: y_a_v_a</title>
+	
+	<meta name="keywords" content="Maleglitch, Malevich, glitch, satromizer, ax710, y4v4, y_a_v_a, alweervincent">
+	<meta name="description" content="Maleglitch by ax710 and y_a_v_a glitches Malevich paintings">
 
-	<!--[if IE]><![endif]-->
-	
-	<title>Maleglitch</title>
-	
-	<meta name="description" content="">
-
-<?php /*?>	<!--link rel="stylesheet" href="_/css/main.css">
-	<link rel="stylesheet" href="_/css/_print/main.css" media="print"--> */ ?>
-	
+<style type="text/css">
+body { padding: 0; margin: 0; text-align: center; }
+h1 { margin: 0; }
+.color0 { color: rgb( 35,  31,  32); }
+.color1 { color: rgb(236,   0, 140); }
+.color2 { color: rgb(  0, 174, 239); }
+.color3 { color: rgb(255, 242,   0); }
+</style>
+<script type="text/javascript">
+myReload = function() {
+	window.location.reload();
+}
+</script>
 </head>
 
-<body>
-
-<div style="text-align: center">
+<body onload="setTimeout('myReload()',10000)">
 
 	<header>
-	
-		<h1>Maleglitch</h1>
-		
-	
+		<h1>Kazimir Maleglitch</h1>
 	</header>
 	
-	<div><img src="img.php" alt="" style="height: 500px"></div>
+	<div>
+		<img src="img.php" alt="" style="height: 600px">
+	</div>
 	
-	<footer>yava</footer>
+	<footer>
+		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">
+			<img alt="Creative Commons License" style="border-width:0; vertical-align: middle; clear: both; margin-right: 4px;" src="somerights20.jpg">
+		</a>
 
-</div>
+		<span class="color2" xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Maleglitch</span>
+		 van <a class="color1" xmlns:cc="http://creativecommons.org/ns#" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL">ax710</a> &amp; 
+		<a class="color2" xmlns:cc="http://creativecommons.org/ns#" href="http://www.alweervincent.nl/" property="cc:attributionName" rel="cc:attributionURL">y_a_v_a</a>
+		 is in licentie gegeven volgens een <a class="color3" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.
+	</footer>
 
 </body>
 </html>

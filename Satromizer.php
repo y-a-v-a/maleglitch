@@ -20,6 +20,8 @@ class Satromizer {
 	
 	private $debug = array();
 	
+	public $success = false;
+	
 	public function __construct($file = '') {
 		$this->time = time();
 		$this->debug['file'] = $file;
@@ -66,10 +68,10 @@ class Satromizer {
 		$this->debug['success'] = 'true';
 		unset($tmp);
 		if ($this->def_img === false) {
-			header('Content-type: text/html');
+			// header('Content-type: text/html');
 			$this->debug['success'] = 'false';
-			// var_dump($this->debug);
-			$this->def_img = @imagecreatetruecolor(300,300);
+			// $this->def_img = @imagecreatetruecolor(300,300);
+			return $this;
 		}
 		// header('Content-type: image/jpeg');
 		
@@ -80,6 +82,7 @@ class Satromizer {
 		}
 		$this->def_img = ob_get_clean();
 		// exit;
+		$this->success = true;
 		$this->doDebug();
 		return $this;
 	}
