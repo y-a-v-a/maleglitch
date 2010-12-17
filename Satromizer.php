@@ -4,11 +4,11 @@
  * @author Vincent Bruijn <vebruijn@gmail.com>
  */
 class Satromizer {
-	private $chunks = 12;
+	private $chunks = 16;
 	
 	private $chunk_size_min = 8;
 	
-	private $chunk_size_max = 32;
+	private $chunk_size_max = 64;
 	
 	private $orig_img = null;
 	
