@@ -3,7 +3,6 @@
 
 <html version="HTML+RDFa 1.1" lang="en">
 <head>
-
 	<meta charset="utf-8">
 	<title>Kazimir Maleglitch :: ax710 :: y_a_v_a</title>
 	

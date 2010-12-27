@@ -58,6 +58,9 @@ class Satromizer {
 		foreach($image_parts as $k => $t) {
 			$arr[$i++] = $t;
 			if (isset($additions[$k])) {
+				if (rand(0,1) == 1) { // random bitwise movements
+					$additions[$k] << rand(1,3);
+				}
 				$arr[$i++] = $additions[$k];
 			}
 		}
