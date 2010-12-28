@@ -1,2 +1,4 @@
 imgs/*
 src/*
+imgs/log.txt
+.DS_Store
