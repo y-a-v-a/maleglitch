@@ -1,9 +1,9 @@
 <?php
 error_reporting(E_ALL);
 // Maleglitch
-require 'Satromizer.php';
+require '../share/Satromizer.php';
 
-$files = @glob('src/*.jpg');
+$files = @glob('../www/src/*.jpg');
 
 if (count($files) == 0) {
 	throw new Exception('No files in source dir.');
