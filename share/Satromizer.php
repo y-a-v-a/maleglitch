@@ -6,9 +6,9 @@
 class Satromizer {
 	private $chunks = 16;
 	
-	private $chunk_size_min = 8;
+	private $chunk_size_min = 1;
 	
-	private $chunk_size_max = 64;
+	private $chunk_size_max = 2;
 	
 	private $orig_img = null;
 	
@@ -22,10 +22,21 @@ class Satromizer {
 	
 	public $success = false;
 	
-	public function __construct($file = '') {
-		$this->time = time();
+	/**
+	 * constructor
+	 * @param $file file to be glitched
+	 * @param $conf array of conf settings like array('chunks'=>16, 'chunk_size_min'=>1,'chunk_size_max'=>8)
+	 */
+	public function __construct($file = '', array $conf = array()) {
+		$this->time = microtime(true);
 		$this->debug['file'] = $file;
 		$this->debug['time'] = $this->time;
+		
+		if (count($conf) > 0) {
+			foreach ($conf as $key => $setting) {
+				$this->$key = $setting;
+			}
+		}
 		
 		$this->orig_img = @file_get_contents($file);
 		if ($this->orig_img == false) {
@@ -58,9 +69,24 @@ class Satromizer {
 		foreach($image_parts as $k => $t) {
 			$arr[$i++] = $t;
 			if (isset($additions[$k])) {
-				if (rand(0,1) == 1) { // random bitwise movements
-					$additions[$k] << rand(1,3);
+				$s = 0;// rand(0,3);
+				switch($s) {
+					case 0:
+						$additions[$k] << rand(1,11);
+						break;
+					case 1:
+						$additions[$k] = str_repeat(chr(rand(100,250)),rand(5000,14000));
+						break;
+					case 2:
+						$additions[$k] = '!)&_)^#)(%!)_#(*)!9385-093H-09-1u039j0-9U30-9juun-ih2i3u';
+						break;
+					case 3:
+						$additions[$k] = strrev($additions[$k]);
+						break;
 				}
+/*				if (rand(0,1) == 1) { // random bitwise movements
+					$additions[$k] << rand(1,3);
+				}*/
 				$arr[$i++] = $additions[$k];
 			}
 		}
@@ -86,7 +112,7 @@ class Satromizer {
 		$this->def_img = ob_get_clean();
 		// exit;
 		$this->success = true;
-		$this->doDebug();
+		// $this->doDebug();
 		return $this;
 	}
 	
