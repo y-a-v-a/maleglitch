@@ -2,3 +2,4 @@
 *.tmproj
 var/images/*
 www/imgs/*
+var/backups/*
