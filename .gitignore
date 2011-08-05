@@ -1,4 +1,4 @@
-imgs/*
-src/*
-imgs/log.txt
-.DS_Store
+*.DS*
+*.tmproj
+var/images/*
+www/imgs/*
