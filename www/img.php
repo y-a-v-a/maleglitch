@@ -1,4 +1,9 @@
 <?php
+/**
+ * Path on server of ax710:
+ * require 'Satromizer.php';
+ * $files = @glob('src/*.jpg');
+ */
 error_reporting(E_ALL);
 // Maleglitch
 require '../share/Satromizer.php';
@@ -16,5 +21,6 @@ while ($s->success == false) {
 }
 
 header("Cache-Control: max-age=0, must-revalidate");
-echo $s->export('imgs/')->show();
+//echo $s->export('imgs/')->show();
+echo $s->show();
 exit;
