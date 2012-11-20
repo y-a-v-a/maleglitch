@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 	<meta charset="utf-8">
 	<title>Kazimir Maleglitch :: ax710 :: y_a_v_a</title>
-	<meta name="keywords" content="Maleglitch, Malevich, glitch, databending, satromizer, ax710, y4v4, y_a_v_a, alweervincent">
+	<meta name="keywords" content="Maleglitch, Malevich, glitch, databending, satromizer, ax710, y4v4, y_a_v_a, alweervincent, hypersuprematism, hyper-suprematism, hypersuprematist composition, hyper-suprematist composition">
 	<meta name="description" content="Maleglitch by ax710 and y_a_v_a glitches Malevich paintings">
     <meta name="project" content="
       ___           ___                         ___           ___     
@@ -50,17 +50,19 @@ myReload = function() {
 </script>
 </head>
 
-<body onload="setTimeout('myReload()', 10000)">
+<body onload="setTimeout('myReload()', 20000)">
 		<h1 id="header"><img class="dsR1" src="maleglitch1007.jpg" alt="Kazimir Maleglitch" border="0"></h1>
 		<img id="image" src="img.php?q=<?php echo time(); ?>" alt="Maleglitch.net">
+		<h2>Hypersuprematist composition</h2>
+		<a href="rss.php" title="RSS feed to get your regular Hypersuprematist composition">Maleglitch rss feed</a> - <a href="api.php" title="JSON API for getting random Hypersuprematist compositions.">Maleglitch API</a>
 		<footer id="bottom">
 			<img src="maleglitchleft.jpg" alt="" width="48" height="71" align="middle" border="0">
 			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">
 				<img alt="Creative Commons License" style="border-width:0; vertical-align: middle; clear: both; margin-right: 4px;" src="somerights20.jpg">
 			</a>
 			<span class="color2" xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Maleglitch</span>
-			 van <a class="color1" xmlns:cc="http://creativecommons.org/ns" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL">ax710</a> &amp; 
-			<a class="color2" xmlns:cc="http://creativecommons.org/ns#" href="http://www.y-a-v-a.org/" property="cc:attributionName" rel="cc:attributionURL">y_a_v_a</a>
+			 van <a class="color1" xmlns:cc="http://creativecommons.org/ns" href="http://www.ax710.org/" property="cc:attributionName" rel="cc:attributionURL" title="http://ax710.org/">ax710</a> &amp; 
+			<a class="color2" xmlns:cc="http://creativecommons.org/ns#" href="http://www.y-a-v-a.org/" property="cc:attributionName" rel="cc:attributionURL" title="yet another visual artist">y_a_v_a</a>
 			 is in licentie gegeven volgens een <a class="color3" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.
 			<img src="maleglitchright.jpg" alt="" width="48" height="71" align="middle" border="0">
 		</footer>
@@ -68,7 +70,8 @@ myReload = function() {
 			var h, f, d;
 			h = $('#header').outerHeight(1);
 			f = $('#bottom').outerHeight(1);
-			d = window.innerHeight - (h + f + 15);
+			console.log(h,f);
+			d = window.innerHeight - (h + f + 80);
 			$('#image').height(d);
 		</script>
 		<script type="text/javascript">

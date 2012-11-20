@@ -4,11 +4,13 @@
  * require 'Satromizer.php';
  * $files = @glob('src/*.jpg');
  */
-error_reporting(E_ALL);
+error_reporting(0);
+date_default_timezone_set('Europe/Amsterdam');
+
 // Maleglitch
 require '../share/Satromizer.php';
 
-$files = @glob('../www/src/*.jpg');
+$files = @glob('src/*.jpg');
 
 if (count($files) == 0) {
 	throw new Exception('No files in source dir.');
@@ -21,6 +23,10 @@ while ($s->success == false) {
 }
 
 header("Cache-Control: max-age=0, must-revalidate");
+$fileName = date('Y-m-d_His') . '.jpg';
+if (count(@glob('imgs/' . date('Y-m-d_') . '*.jpg')) == 0) {
+	$s->export('imgs/', $fileName);
+}
 //echo $s->export('imgs/')->show();
 echo $s->show();
 exit;

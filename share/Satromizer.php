@@ -121,9 +121,10 @@ class Satromizer {
 	 * @param string directory to write to.
 	 * @return object $this
 	 */
-	public function export($target = '') {
+	public function export($target = '', $filename = null) {
 		if ($this->def_img != null) {
-			$saved = @file_put_contents($target . 'img' . $this->time .'.jpg', $this->def_img);
+			$fileName = $filename !== null ? $filename : 'img' . $this->time .'.jpg';
+			$saved = @file_put_contents($target . $fileName , $this->def_img);
 			if ($saved == false) {
 				throw new Exception('Cannot write image. Permissions issue?');
 			}
