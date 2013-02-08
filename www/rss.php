@@ -23,7 +23,7 @@ echo  '<?xml version="1.0" encoding="UTF-8"?>';
 		<?php $date = strtotime(str_replace('_',' ',substr($image, 5,17)));
 		?>
 		<item>
-			<title>Hypersuprematist composition</title>
+			<title>Hypersuprematist composition <?=date('Y-n-j', $date)?></title>
 			<subject>hypersuprematism</subject>
 			<description>
 				<img src="<?php echo $url . $image ?>"/><br/><br/>
