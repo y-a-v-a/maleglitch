@@ -3,7 +3,7 @@ date_default_timezone_set('Europe/Amsterdam');
 $files = @glob('imgs/*.jpg');
 
 natsort($files);
-$rssImages = array_reverse(array_slice($files, 0, 5));
+$rssImages = array_slice(array_reverse($files), 0, 5);
 
 $path = strrev(strstr(strrev($_SERVER['REQUEST_URI']), '/'));
 $url = 'http://' . $_SERVER['SERVER_NAME'] . $path;
