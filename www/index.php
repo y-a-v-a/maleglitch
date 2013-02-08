@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 	<meta charset="utf-8">
 	<title>Kazimir Maleglitch :: ax710 :: y_a_v_a</title>
-	<meta name="keywords" content="Maleglitch, Malevich, glitch, databending, satromizer, ax710, y4v4, y_a_v_a, alweervincent, hypersuprematism, hyper-suprematism, hypersuprematist composition, hyper-suprematist composition">
+	<meta name="keywords" content="Maleglitch, Malevich, glitch, databending, satromizer, ax710, y4v4, y_a_v_a, alweervincent, suprematism, suprematist composition, hypersuprematism, hyper-suprematism, hypersuprematist composition, hyper-suprematist composition">
 	<meta name="description" content="Maleglitch by ax710 and y_a_v_a glitches Malevich paintings">
     <meta name="project" content="
       ___           ___                         ___           ___     
