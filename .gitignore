@@ -1,5 +1,6 @@
 *.DS*
 *.tmproj
-var/images/*
 www/imgs/*
-var/backups/*
+var
+www2
+ax710
