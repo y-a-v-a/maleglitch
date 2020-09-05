@@ -2,7 +2,27 @@
 <!DOCTYPE html>
 <html version="HTML+RDFa 1.1" lang="en">
 <head>
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
 	<meta charset="utf-8">
 	<title>Kazimir Maleglitch :: ax710 :: y_a_v_a</title>
 	<meta name="keywords" content="Maleglitch, Kazimir Malevich, glitch, glitch art, databending, satromizer, ax710, y4v4, y_a_v_a, alweervincent, suprematism, suprematist composition, hypersuprematism, hyper-suprematism, hypersuprematist composition, hyper-suprematist composition">
@@ -33,9 +53,9 @@
      \__\/         \__\/         \__\/    \  \::/       \  \:\
                                            \__\/         \__\/  ">
 <style>
-html { width: 100vw; height: 100vh; font-size: 16px; }
-body { height: 100%; padding: 0; margin: 0; text-align: center; /*overflow: hidden;*/ }
-article {display: flex; flex-direction: column; height: 100%;}
+html { width: 100vw; height: 100vh; height: -webkit-fill-available; font-size: 16px; }
+body { height: 100%; padding: 0; margin: 0; text-align: center; min-height: -webkit-fill-available; }
+main {display: flex; flex-direction: column; height: 100%; height: -webkit-fill-available; }
 img { border: none; }
 .c { color: rgb(  0, 174, 239); }
 .m { color: rgb(236,   0, 140); }
@@ -46,8 +66,8 @@ figure { margin: 0; flex-grow: 2; position: relative; }
 figure img { max-width: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0;margin: auto; max-height: 100%;  }
 footer { margin: 1em 0; }
 h1 > img { max-width: 100%; }
-article + div { position: fixed; width: 100%; height: 0.1875em; bottom: 0; left: 0; line-height: 0; }
-article + div > div {  float: left; width: 100%; height: 0.1875em; line-height: 0; background-color: rgba(236,   0, 140, .3); }
+main + div { position: fixed; width: 100%; height: 0.1875em; bottom: 0; left: 0; line-height: 0; }
+main + div > div {  float: left; width: 100%; height: 0.1875em; line-height: 0; background-color: rgba(236,   0, 140, .3); }
 img[alt="Creative Commons License"] { margin-right: 4px; clear: both; vertical-align: middle; }
 
 @media screen and (max-width: 414px) {
@@ -56,7 +76,7 @@ img[alt="Creative Commons License"] { margin-right: 4px; clear: both; vertical-a
 </style>
 </head>
 <body>
-  <article class="">
+  <main>
     <h1 title="Kazimir Maleglitch by ax710 and y-a-v-a - 2010"><img src="header.jpg" alt="Kazimir Maleglitch by ax710 and y-a-v-a - 2010"></h1>
     <figure>
       <img src="img.php?q=<?php echo time() . '000'; ?>" alt="Maleglitch.net">
@@ -74,7 +94,7 @@ img[alt="Creative Commons License"] { margin-right: 4px; clear: both; vertical-a
       <a class="c" xmlns:cc="http://creativecommons.org/ns#" href="http://www.y-a-v-a.org/" property="cc:attributionName" rel="cc:attributionURL" title="yet another visual artist">y_a_v_a</a>
         is in licentie gegeven volgens een <a class="y" rel="license" href="http://creativecommons.org/licenses/by/3.0/nl/">Creative Commons Naamsvermelding 3.0 Nederland licentie</a>.
     </footer>
-  </article>
+  </main>
   <div><div></div></div>
   <script>
     /**
