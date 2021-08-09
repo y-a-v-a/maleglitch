@@ -9,27 +9,27 @@
    	<meta name="description" content="Maleglitch by ax710 and y_a_v_a glitches Malevich paintings">
     <meta name="viewport" content="width=device-width,initial-scale=1">
        <meta name="project" content="
-         ___           ___                         ___           ___     
-        /__/\         /  /\                       /  /\         /  /\    
-       |  |::\       /  /::\                     /  /:/_       /  /:/_   
-       |  |:|:\     /  /:/\:\    ___     ___    /  /:/ /\     /  /:/ /\  
-     __|__|:|\:\   /  /:/~/::\  /__/\   /  /\  /  /:/ /:/_   /  /:/_/::\ 
+         ___           ___                         ___           ___
+        /__/\         /  /\                       /  /\         /  /\
+       |  |::\       /  /::\                     /  /:/_       /  /:/_
+       |  |:|:\     /  /:/\:\    ___     ___    /  /:/ /\     /  /:/ /\
+     __|__|:|\:\   /  /:/~/::\  /__/\   /  /\  /  /:/ /:/_   /  /:/_/::\
     /__/::::| \:\ /__/:/ /:/\:\ \  \:\ /  /:/ /__/:/ /:/ /\ /__/:/__\/\:\
     \  \:\~~\__\/ \  \:\/:/__\/  \  \:\  /:/  \  \:\/:/ /:/ \  \:\ /~~/:/
-     \  \:\        \  \::/        \  \:\/:/    \  \::/ /:/   \  \:\  /:/ 
-      \  \:\        \  \:\         \  \::/      \  \:\/:/     \  \:\/:/  
-       \  \:\        \  \:\         \__\/        \  \::/       \  \::/   
-        \__\/         \__\/                       \__\/         \__\/    
-                                               ___           ___     
-                     ___           ___        /  /\         /__/\    
-                    /  /\         /  /\      /  /:/         \  \:\   
-     ___     ___   /  /:/        /  /:/     /  /:/           \__\:\  
-    /__/\   /  /\ /__/::\       /  /:/     /  /:/  ___   ___ /  /::\ 
+     \  \:\        \  \::/        \  \:\/:/    \  \::/ /:/   \  \:\  /:/
+      \  \:\        \  \:\         \  \::/      \  \:\/:/     \  \:\/:/
+       \  \:\        \  \:\         \__\/        \  \::/       \  \::/
+        \__\/         \__\/                       \__\/         \__\/
+                                               ___           ___
+                     ___           ___        /  /\         /__/\
+                    /  /\         /  /\      /  /:/         \  \:\
+     ___     ___   /  /:/        /  /:/     /  /:/           \__\:\
+    /__/\   /  /\ /__/::\       /  /:/     /  /:/  ___   ___ /  /::\
     \  \:\ /  /:/ \__\/\:\__   /  /::\    /__/:/  /  /\ /__/\  /:/\:\
      \  \:\  /:/     \  \:\/\ /__/:/\:\   \  \:\ /  /:/ \  \:\/:/__\/
-      \  \:\/:/       \__\::/ \__\/  \:\   \  \:\  /:/   \  \::/     
-       \  \::/        /__/:/       \  \:\   \  \:\/:/     \  \:\     
-        \__\/         \__\/         \__\/    \  \::/       \  \:\    
+      \  \:\/:/       \__\::/ \__\/  \:\   \  \:\  /:/   \  \::/
+       \  \::/        /__/:/       \  \:\   \  \:\/:/     \  \:\
+        \__\/         \__\/         \__\/    \  \::/       \  \:\
                                               \__\/         \__\/  ">
 <style>
 html { width: 100%; height: 100%; }
@@ -54,6 +54,9 @@ body > div p { line-height: 1.8; font-size: 20px; }
         padding: 0 10px;
     }
 }
+.twitter-tweet-rendered {
+    margin: 0 auto;
+}
 </style>
 </head>
 <body>
@@ -66,6 +69,9 @@ body > div p { line-height: 1.8; font-size: 20px; }
             <p>The price was a Malevich tattoo, to be tattooed by Dutch tattoo legend Henk Schiffmacher. The idea came from Bart Rutten, curator at the Stedelijk Museum Amsterdam, who once met a girl with a Malevich tattoo. <strong>We won the contest so we now have a Malevich tattoo!</strong></p>
             <img src="tattoo/Malevich_Tattoo_Hanky_Panky_Ruud_Akse-04a.jpg" alt="" width="700">
             <p>Or more precisely: <a class="c" href="http://www.ax710.org" target="_blank">ax710</a> has a Maleglitch tattoo of the painting that <a class="y" href="http://www.y-a-v-a.org" target="_blank">y_a_v_a</a>'s tattoo is based on. This makes the circle round: y_a_v_a has a Malevich tattoo, ax710 has a Maleglitch tattoo.</p><p>The pictures shown here are taken by Zwaan Ipema at <a class="m" href="http://www.tattooing.nl/">Schiffmacher &amp; Veldhoen</a> on March 15 2014. More beautiful pictures taken by <a class="c" href="http://www.tomekdersuaaron.com/home/">Tomek Whitfield</a> can be found on the <a class="m" href="https://www.facebook.com/media/set/?set=a.10152266729704659.1073741849.103829284658">Stedelijk Museum Facebook page</a>. Other submissions to the contest can be viewed on <a class="y" href="http://www.pinterest.com/stedelijk/malevichishere/">Pinterest</a>.</p>
+            <p>
+            <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Today winner <a href="https://twitter.com/y_a_v_a?ref_src=twsrc%5Etfw">@y_a_v_a</a> is getting his Malevich tattoo! <a href="https://twitter.com/HSchiffmacher?ref_src=twsrc%5Etfw">@HSchiffmacher</a> <a href="https://twitter.com/hashtag/Malevichishere?src=hash&amp;ref_src=twsrc%5Etfw">#Malevichishere</a> <a href="http://t.co/dwCHcZNOEr">pic.twitter.com/dwCHcZNOEr</a></p>&mdash; Stedelijk Museum (@Stedelijk) <a href="https://twitter.com/Stedelijk/status/444812262264406016?ref_src=twsrc%5Etfw">March 15, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </p>
             <p><a class="c" href="http://www.maleglitch.net/">&larr;&nbsp;back</a></p>
         </div>
 </body>
