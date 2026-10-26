@@ -14,3 +14,14 @@ After the class was finished I made several scripts to generate a lot of glitche
 * implementation in www folder is called Maleglitch
 * www.maleglitch.net is a live project from ax710 and y-a-v-a
 * the domain is owned and administrated by ax710
+
+## Development
+
+A Docker based development environment (PHP 8.3 + Apache + GD with JPEG support) is included. The project directory is bind-mounted into the container, so edits are live:
+
+```sh
+docker compose up --build -d
+open http://localhost:8710/
+```
+
+Glitched images are rendered by `www/img.php` and archived (one per day) in `www/imgs/`.

@@ -1,6 +1,7 @@
 *.DS*
 *.tmproj
 www/imgs/*
+!www/imgs/.gitkeep
 var
 www2
 ax710
