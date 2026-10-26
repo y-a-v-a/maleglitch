@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Europe/Amsterdam');
-$files = @glob('imgs/*.jpg');
+$files = @glob('imgs/*.jpg') ?: array();
 
 natsort($files);
 $rssImages = array_slice(array_reverse($files), 0, 5);
