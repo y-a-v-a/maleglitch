@@ -19,7 +19,9 @@ class Satromizer {
 	private $parts;
 	
 	private $debug = array();
-	
+
+	private $time;
+
 	public $success = false;
 	
 	/**
@@ -72,7 +74,8 @@ class Satromizer {
 				$s = 0;// rand(0,3);
 				switch($s) {
 					case 0:
-						$additions[$k] << rand(1,11);
+						// keep addition as-is; shifting a string was always a no-op
+						// and throws a TypeError since PHP 8
 						break;
 					case 1:
 						$additions[$k] = str_repeat(chr(rand(100,250)),rand(5000,14000));
@@ -138,13 +141,15 @@ class Satromizer {
 	private function stripHeaders() {
 		// trick to strip all kinds of headers from a jpeg file
 		$img = @imagecreatefromstring($this->orig_img);
+		if ($img === false) {
+			throw new Exception('Cannot read image.');
+		}
 		ob_start();
 	    $is_img = @imagejpeg($img, null, 80);
 		if ($is_img === false) {
 			throw new Exception('Cannot strip headers from image.');
 		}
 	    $img_buffer = ob_get_clean();
-		imagedestroy($img);
 		return $img_buffer;
 	}
 	
@@ -220,11 +225,5 @@ class Satromizer {
 		print_r($this->debug);
 		$msg = ob_get_clean();
 		$this->log($msg);
-	}
-	
-	public function __destruct() {
-		@imagedestroy($this->orig_img);
-		@imagedestroy($this->tmp_img);
-		@imagedestroy($this->def_img);
 	}
 }
