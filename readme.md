@@ -25,3 +25,9 @@ open http://localhost:8710/
 ```
 
 Glitched images are rendered by `www/img.php` and archived (one per day) in `www/imgs/`.
+
+To check the site against another PHP release before the host upgrades, set `PHP_VERSION` (any `php:<version>-apache` image tag, e.g. `8.5` or `8.6-rc`):
+
+```sh
+PHP_VERSION=8.5 docker compose up --build -d
+```

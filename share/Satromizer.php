@@ -44,7 +44,6 @@ class Satromizer {
 		if ($this->orig_img == false) {
 			throw new Exception('Cannot get file contents.');
 		}
-		return $this;
 	}
 	
 	/**

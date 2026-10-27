@@ -1,7 +1,11 @@
 # Development environment: `docker compose up --build`, then open http://localhost:8710/
+# Another PHP release: `PHP_VERSION=8.5 docker compose up --build`
 services:
   web:
-    build: ./docker
+    build:
+      context: ./docker
+      args:
+        PHP_VERSION: ${PHP_VERSION:-8.3}
     ports:
       - "8710:80"
     volumes:

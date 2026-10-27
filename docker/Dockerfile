@@ -1,6 +1,8 @@
 # Development image for Maleglitch: PHP 8.3 + Apache with GD (JPEG support).
 # The project source is not copied in; it is bind-mounted by compose.yaml.
-FROM php:8.3-apache
+# Set PHP_VERSION (e.g. 8.5, 8.6-rc) to try the site on another PHP release.
+ARG PHP_VERSION=8.3
+FROM php:${PHP_VERSION}-apache
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
