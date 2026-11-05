@@ -1,15 +1,16 @@
 <?php
-/**
- * Path on server of ax710:
- * require 'Satromizer.php';
- * $files = @glob('src/*.jpg');
- */
 // never print errors into the image, but do log them
 ini_set('display_errors', '0');
 date_default_timezone_set('Europe/Amsterdam');
 
 // Maleglitch
-require '../share/Satromizer.php';
+// on the server of ax710 Satromizer.php sits next to this file,
+// in the repository it lives in share/
+if (is_file(__DIR__ . '/Satromizer.php')) {
+	require __DIR__ . '/Satromizer.php';
+} else {
+	require __DIR__ . '/../share/Satromizer.php';
+}
 
 $files = @glob('src/*.jpg') ?: array();
 
