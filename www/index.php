@@ -150,17 +150,6 @@ img[alt="Creative Commons License"] { margin-right: 4px; clear: both; vertical-a
       timer();
       interval = setInterval(timer, duration * 1000);
     }());
-
-    // Google analytics
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-16179947-10']);
-    _gaq.push(['_setDomainName', 'maleglitch.net']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = 'http://www.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
   </script>
 
 </body>
